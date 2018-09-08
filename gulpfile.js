@@ -74,13 +74,12 @@ gulp.task('browser-sync', function() {
     server: {
       baseDir: DEST,
     },
-    ghostMode: false,
     open: false,
   });
 
-  gulp.watch('src/html/**/*.{pug}', ['pug', 'reload']);
-  gulp.watch('src/stylesheets/**/*.{scss}', ['sass', 'reload']);
-  gulp.watch('src/javascripts/**/*.{js}', ['javascript', 'reload']);
+  gulp.watch('src/html/**/*.pug', ['pug', 'reload']);
+  gulp.watch('src/stylesheets/**/*.scss', ['sass', 'reload']);
+  gulp.watch('src/javascripts/**/*.js', ['javascript', 'reload']);
   gulp.watch('src/images/**/*', ['image', 'reload']);
 });
 
