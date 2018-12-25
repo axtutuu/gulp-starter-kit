@@ -11,4 +11,4 @@ do
   esac
 done
 
-cp -r src gulpfile.js package.json yarn.lock .gitignore webpack.config.js  $DIR
+cp -r src gulpfile.js package.json yarn.lock .gitignore webpack.config.js .eslintrc  $DIR
